@@ -26,17 +26,10 @@ Typit è un nuovo linguaggio basato su un piccolo interprete scritto in Rust, pr
 - Nessuna macro esterna necessaria
 
 * Template Disponibili
-** Article
-Per articoli tecnici e scientifici
-
-** Book
-Per libri e saggi
-
-** Manual
-Per manuali tecnici
-
-** Beamer
-Per presentazioni in stile PowerPoint/LaTeX Beamer
+ * Article -- Per articoli tecnici e scientifici
+ * Book -- Per libri e saggi
+ * Manual -- Per manuali tecnici
+ * Beamer -- Per presentazioni in stile PowerPoint/LaTeX Beamer
 
 * Installazione e Utilizzo
 ** Prerequisiti
@@ -54,12 +47,14 @@ cd typit-template
 typit compile input.typit -t templates/article.typit -o output.pdf
 #+END_SRC
 
+#+begin_comment
 * Esempi
 ** Esempio di Articolo
 #+INCLUDE: "examples/example-article.typit" src typit
 
 ** Esempio di Presentazione
 #+INCLUDE: "examples/example-beamer.typit" src typit
+#+end_comment
 
 * Contribuire
 ** Come Contribuire
