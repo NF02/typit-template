@@ -1,6 +1,6 @@
 #+TITLE: Typit Template Repository
 #+AUTHOR: Nicola Ferru
-#+EMAIL: ask.nfvblog@outlook.it
+#+EMAIL: ask dot nfvblog at outlook dot it
 #+DATE: 2024
 #+OPTIONS: toc:2 num:t
 
@@ -72,7 +72,7 @@ typit compile input.typit -t templates/article.typit -o output.pdf
 * Supporto e Donazioni
 ** Supporto Tecnico
 Per assistenza con la configurazione o personalizzazione:
-- Email: ask.nfvblog@outlook.it
+- Email: ask dot nfvblog at outlook dot it
 - Issues su GitHub
 
 ** Donazioni
