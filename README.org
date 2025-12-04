@@ -1,0 +1,95 @@
+#+TITLE: Typit Template Repository
+#+AUTHOR: Nicola Ferru
+#+EMAIL: ask.nfvblog@outlook.it
+#+DATE: 2024
+#+OPTIONS: toc:2 num:t
+
+* Introduzione
+Questo repository contiene tutti gli stili che creo per **Typit**, un sistema tipografico semplice e immediato per produrre documenti tipograficamente interessanti.
+
+** Cos'è Typit?
+Typit è un nuovo linguaggio basato su un piccolo interprete scritto in Rust, progettato per sostituire:
+1. Word e Google Docs
+2. LaTeX
+3. Markdown
+
+* Caratteristiche principali
+** Moderno e Dinamico
+- Testo che si adatta dinamicamente alle dimensioni della carta
+- Nessuna configurazione manuale richiesta
+- Supporta tutti i tipi di carta esistenti
+
+** Modularità Integrata
+- Sistema basato esclusivamente su file di scripting
+- Nessun problema di portabilità o compatibilità
+- Standard definiti a livello di compilatore
+- Nessuna macro esterna necessaria
+
+* Template Disponibili
+** Article
+Per articoli tecnici e scientifici
+
+** Book
+Per libri e saggi
+
+** Manual
+Per manuali tecnici
+
+** Beamer
+Per presentazioni in stile PowerPoint/LaTeX Beamer
+
+* Installazione e Utilizzo
+** Prerequisiti
+- Interprete Typit installato
+- Rust (per sviluppo)
+
+** Installazione Rapida
+#+BEGIN_SRC bash
+git clone https://github.com/nf02/typit-template.git
+cd typit-template
+#+END_SRC
+
+** Utilizzo Base
+#+BEGIN_SRC bash
+typit compile input.typit -t templates/article.typit -o output.pdf
+#+END_SRC
+
+* Esempi
+** Esempio di Articolo
+#+INCLUDE: "examples/example-article.typit" src typit
+
+** Esempio di Presentazione
+#+INCLUDE: "examples/example-beamer.typit" src typit
+
+* Contribuire
+** Come Contribuire
+1. Fork del repository
+2. Crea un branch per la tua feature
+3. Commit delle modifiche
+4. Push al branch
+5. Crea una Pull Request
+
+** Linee Guida
+- Seguire la struttura esistente
+- Documentare le nuove feature
+- Includere esempi di utilizzo
+
+* Supporto e Donazioni
+** Supporto Tecnico
+Per assistenza con la configurazione o personalizzazione:
+- Email: ask.nfvblog@outlook.it
+- Issues su GitHub
+
+** Donazioni
+Per supportare il progetto:
+- [[https://ko-fi.com/nfvblog][Ko-Fi]]
+- Contributi diretti tramite codice
+
+* Licenza
+#+INCLUDE: "LICENSE.org"
+
+* Changelog
+** v1.0.0 (2024)
+- Template base per articoli, libri, manuali e presentazioni
+- Sistema di compilazione integrato
+- Documentazione completa
